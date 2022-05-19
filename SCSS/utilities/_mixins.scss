@@ -1,0 +1,61 @@
+@mixin imgProducto{
+
+    width: 180px;
+    height: 110px;
+    border-radius: 3%;
+    box-shadow: 0 1px 8px;
+    
+}
+@mixin img-producto-index{
+
+    width: 180px;
+    height: 110px;
+    
+    border-radius: 3%;
+    
+    box-shadow: 0 1px 8px;
+    margin-left:1rem;
+
+}
+
+@mixin divTituloProducto{
+    text-align: center;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+
+}
+
+@mixin botones{
+
+    text-decoration: none;
+    background-color: map-get($map: $colores, $key:color-primario);
+    color: white;
+    border: solid black 1px;
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 5px black;
+    transform: translate(-1px, -1px);
+    &:active{
+        transform: translate(0);
+        box-shadow: none;
+      }
+    &:hover{
+        background-color: map-get($map: $colores, $key:color-hover );
+    }
+    
+    }
+@mixin a{
+    text-decoration: none;
+    color: #edf2f4;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.01rem;
+   
+    
+}
+@mixin titulo{
+    text-align: center;
+    color: map-get($map: $colores, $key:color-primario );
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}

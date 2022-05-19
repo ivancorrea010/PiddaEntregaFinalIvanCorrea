@@ -1,0 +1,19 @@
+$color-fondo:rgb(248, 203, 203);
+$color-rojo:#cf0a2c;
+
+//mapas
+
+$colores: (
+color-primario: $color-rojo,
+color-hover: red,
+color-fondo: $color-fondo,
+
+);
+
+//extend
+
+%a-footer{
+    &:hover{
+     text-shadow: 0.3px 0.3px 0.3px white;
+    }
+}
